@@ -1,0 +1,58 @@
+body {
+  background-image: url("image/Ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: darkblue;
+}
+
+#page {
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+  border: 4px double #000;
+}
+
+@font-face {
+  font-family: "groovy";
+  src: url("font/groovy.ttf");
+}
+
+h1 {
+  font-family: "groovy";
+  font-size: 400%;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: teal;
+  color: #ffffff;
+  text-shadow: 2px 2px 7px #111111;
+  border-radius: 20px;
+}
+
+h3,
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: larger;
+}
+
+p {
+  text-align: center;
+  width: 600px;
+  border: 10px solid teal;
+  margin: 20px auto 20px auto;
+  font-weight: normal;
+  background-color: #e6e1e1;
+  padding: 10px;
+}
+
+img {
+  float: right;
+  width: 200px;
+  height: 100px;
+  margin-left: 15px;
+}
