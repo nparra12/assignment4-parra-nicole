@@ -147,7 +147,7 @@ Jellyfish STYLING
 
 @keyframes MoveUpDown {
   0%,
-  500% {
+  100% {
     bottom: 0;
   }
   100% {
