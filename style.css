@@ -1,5 +1,5 @@
 body {
-  background-image: url("image/Ocean.jpg");
+  background-image: url("images/Ocean.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -13,7 +13,7 @@ body {
   min-width: 720px;
   margin: 10px auto 10px auto;
   padding: 20px;
-  border: 4px double #000;
+ 
 }
 
 @font-face {
@@ -55,4 +55,45 @@ img {
   width: 200px;
   height: 100px;
   margin-left: 15px;
+}
+
+/*=================
+
+
+
+Header STYLING
+
+
+
+===================== */
+
+header {
+  background: rgb(0 0 0 /70%);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  WIDTH: 100%;
+  Z-INDEX: 999999;
+}
+
+header nav li{
+  display: inline-block;
+}
+
+/* visited link */
+a:visited {
+  color: navy;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+header a {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: teal;
+  margin: 0 20px;
 }
