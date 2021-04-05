@@ -1,24 +1,19 @@
-body {
-  background-image: url("images/Ocean.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  color: darkblue;
-}
+/*=================
 
-#page {
-  max-width: 940px;
-  min-width: 720px;
-  margin: 10px auto 10px auto;
-  padding: 20px;
- 
-}
 
-@font-face {
-  font-family: "groovy";
-  src: url("font/groovy.ttf");
+
+UNIVERSAL STYLING
+
+
+
+=====================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -30,6 +25,7 @@ h1 {
   color: #ffffff;
   text-shadow: 2px 2px 7px #111111;
   border-radius: 20px;
+  margin: 75px;
 }
 
 h3,
@@ -50,13 +46,43 @@ p {
   padding: 10px;
 }
 
+
+
+body {
+  background-image: url("images/Ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: darkblue;
+}
+
+#page {
+  max-width: 940px;
+  min-width: 720px;
+  margin: 10px auto 10px auto;
+  padding: 20px;
+}
+
+@font-face {
+  font-family: "groovy";
+  src: url("font/groovy.ttf");
+}
+
+
+
 img {
   float: right;
   width: 200px;
   height: 100px;
   margin-left: 15px;
-}
 
+
+span{
+  color: white;
+  background-color: navy;
+}
 /*=================
 
 
@@ -68,24 +94,22 @@ Header STYLING
 ===================== */
 
 header {
-  background: rgb(0 0 0 /70%);
-  padding: 20px 0;
+  background: rgb(0 0 0 /50%);
+  padding: 30px 0;
   text-align: center;
   position: fixed;
-  WIDTH: 100%;
-  Z-INDEX: 999999;
+  width: 100%;
+  z-index: 999999;
 }
 
-header nav li{
+header nav li {
   display: inline-block;
 }
 
-/* visited link */
 a:visited {
   color: navy;
 }
 
-/* mouse over link */
 a:hover {
   color: hotpink;
 }
@@ -96,4 +120,35 @@ header a {
   text-decoration: none;
   color: teal;
   margin: 0 20px;
+}
+/*=================
+
+
+
+Jellyfish STYLING
+
+
+
+===================== */
+.jellyfish{
+  position: relative;
+  bottom: 0;
+  left: 0px;
+  animation: MoveUpDown 5s linear infinite;
+}
+
+.anotherjellyfish{
+  position: relative;
+  bottom: 0;
+  right: 250px;
+  animation: MoveUpDown 5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
 }
