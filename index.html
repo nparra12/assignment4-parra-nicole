@@ -1,23 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luna Coffee Co.</title>
 
     <!--FAVICON-->
-    <link rel="shortcut icon" type="img/png" href="images/favicon_coffeecup.png" />
+    <link
+      rel="shortcut icon"
+      type="img/png"
+      href="images/favicon_coffeecup.png"
+    />
 
     <!-- CSS Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-</head>
-<body>
-    Luna Coffee Co.
-</body>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-image-section" id="home">
+        <img
+          class="mug-logo"
+          src="images/lunacoffeecocup.png"
+          alt="coffee mug on table"
+          title="coffee mug"
+        />
+      </section>
+
+      <div class="container">
+        <section class="about-section" id="about">
+          <h1>Sippin' caffeine before the sun comes out</h1>
+          <p>
+            That's what Luna Coffee Co. is all about. Since opening in 2015,
+            Luna has made a committment to making tasty coffee and tea drinks
+            along with killer customer service.
+          </p>
+        </section>
+      </div>
+      <div class="container">
+        <section class="menu-section" id="menu">
+          <div class="drink menu">
+            <div class="drinks">
+              <p>Honey Black Coffee</p>
+              <img
+                src="images/honeyblackcoffee.png"
+                alt="Honey Black Coffee"
+                title="Honey Black Coffee"
+              />
+            </div>
+            <div class="drinks">
+              <p>Iced Vanilla Latte</p>
+              <img
+                src="images/icedvanillalatte.png"
+                alt="Iced Vanilla Latte"
+                title="Iced Vanilla Latte"
+              />
+            </div>
+            <div class="drinks">
+              <p>Oatmilk Cappuccino</p>
+              <img
+                src="images/cappuccino.png"
+                alt="Oat Milk Cappuccino"
+                title="Oat Milk Cappuccino"
+              />
+            </div>
+            <div class="drinks">
+              <p>Scarlett Citrus Tea</p>
+              <img
+                src="images/citrustea.png"
+                alt="Scarlett Citrus Tea"
+                title="Scarlett Citrus Tea"
+              />
+            </div>
+            <div class="drinks">
+              <p>Matcha Latte</p>
+              <img
+                src="images/hotmatchalattee.png"
+                alt="Matcha Latte"
+                title="Matcha Latte"
+              />
+            </div>
+            <div class="drinks">
+              <p>Iced Matcha Latte</p>
+              <img
+                src="images/icedmatchalatte.png"
+                alt="Iced Matcha Latte"
+                title="Iced Matcha Latte"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="testimonial"></section>
+
+      <div class="container">
+        <section class="shop" id="shop">
+          <h2>Shop Merch</h2>
+          <p>Don't talk about Luna Coffee, be about Luna Coffee.</p>
+          <div class="clay mug">
+            <img src="images/mug.png" alt="clay mug" title="clay mug" />
+            <p>Clay Mug</p>
+          </div>
+
+          <div class="Hat">
+            <img src="images/hat.png" alt="hat" title="hat" />
+            <p>Hat</p>
+          </div>
+
+          <div class="glass bottle">
+            <img
+              src="images/glassbottle.png"
+              alt="glass bottle"
+              title="glass bottle"
+            />
+            <p>Glass Bottle</p>
+          </div>
+
+          <div class="tshirt">
+            <img src="images/shirt.png" alt="tshirt" title="tshirt" />
+            <p>T-shirt</p>
+          </div>
+        </section>
+
+        <div class="container">
+          <section class="contact-section" id="contact-us">
+            <form
+            class="contact-form"
+            id="test_form"
+            name="test_form"
+            method="POST"
+            action="form.php"
+            onsubmit="return validateForm(this)"
+          >
+            <div class="first-name input-section">
+              <label for="firstname" class="label_input_wrap">First Name:</label>
+              <input
+                type="text"
+                name="req_firstname"
+                id="firstname"
+                placeholder="ex. John"
+              />
+            </div>
+            <div class="last-name input-section">
+              <label for="lastname" class="label_input_wrap">Last Name:</label>
+              <input
+                type="text"
+                name="req_lastname"
+                id="lastname"
+                placeholder="ex. Smith"
+              />
+            </div>
+            <div class="email input-section">
+              <label for="email" class="label_input_wrap">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="jsmith@example.com"
+              />
+            </div>
+            <div class="telephone input-section">
+              <label for="telephone" class="label_input_wrap">Telephone:</label>
+              <input
+                type="tel"
+                name="req_telephone"
+                id="telephone"
+                placeholder="555-555-5555"
+              />
+            </div>
+            <div class="comments input-section">
+              <label for="comments" class="label_input_wrap"> Comments:</label>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="35"
+                rows="5"
+                placeholder="Your Comment Goes Here"
+              ></textarea>
+            </div>
+            <div class="reset">
+              <input type="reset" value="refresh" />
+            </div>
+    
+            <div class="submit">
+              <input type="submit" value="send message" />
+            </div>
+          </form>
+
+          <p>Address: 123 Main Street, Austin, TX | Phone: 555-555-5555 | <a href="mailto:email@example.com">Email us</a></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36395986623!2d-97.89348477786456!3d30.307686292630823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1619294355446!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="socialmedia">
+            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" title="facebook" /></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter" title="twitter" /></a>
+            <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="facebook" title="facebook" /></a>
+        </div>
+    </footer>
+  </body>
 </html>
