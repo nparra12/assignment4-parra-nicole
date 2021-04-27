@@ -1,10 +1,14 @@
-/*universal styling*/
+/*==================================
+
+        Universal styling
+
+==================================*/
 
 * {
     padding: 0;
     margin: 0;
     border: 0;
-    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -12,7 +16,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -26,12 +30,42 @@ p{
 
 ======================================*/
 
-header{
+header {
     background: lightgray;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
 }
 
-header nav a{
-    color: white;
-    text-decoration: none;
- 
+header nav ul li {
+    display: inline;
 }
+
+li a:hover {
+    color: #76afb4;
+}
+
+header nav a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+
+/*======================================
+
+            Hero Image Section
+
+======================================*/
+
+.hero-image-section{
+    background-image: url('../images/heroimage.png');
+    background-size:auto;
+    padding: 500px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
