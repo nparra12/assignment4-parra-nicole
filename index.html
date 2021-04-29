@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luna Coffee Co.</title>
+    <meta
+      name="description"
+      content="More than just great caffinated drinks. Explore our menu and pick up a cup of your favorite coffee or tea today."
+    />
 
     <!--FAVICON-->
     <link
@@ -15,6 +19,10 @@
 
     <!-- CSS Stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -31,10 +39,14 @@
 
   <body>
     <header>
-      <!--img src="images/logo.png" alt="Luna Coffee Co." title="Luna Coffee Co."/> -->
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#home"
+              ><img class="logo" src="images/logo.png" alt="logo" title="logo"
+            /></a>
+          </li>
+          <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -47,17 +59,33 @@
 
       <div class="container">
         <section class="about-section" id="about">
-          <h1>Sippin' caffeine before the sun comes out</h1>
+          <h1 class="animate__animated animate__bounce">
+            Sippin' caffeine before the sun comes out
+          </h1>
+
           <p>
-            That's what Luna Coffee Co. is all about. Since opening in 2015,
-            Luna has made a committment to making tasty coffee and tea drinks
-            along with killer customer service.
+            That's what Luna Coffee Co. is all about– we cater and are dedicated
+            to all the busy bees' that are getting stuff done at the crack of
+            dawn! Since opening in 2015, Luna Coffee Company has made a
+            committment to making tasty coffee and tea drinks along with killer
+            customer service to make your crazy morning a little smoother.
           </p>
+          <br />
+          <a href="#menu" class="menubutton">View Menu</a>
         </section>
       </div>
-      <div class="container">
+
+      <div class="menu-container">
         <section class="menu-section" id="menu">
-          <div class="drink menu">
+          <div class="drink-menu">
+            <h1>Coffeebar Menu</h1>
+            <hr />
+            <p>
+              Discover your new favorite delicious hand-crafted coffee and tea beverages!<br> Be sure to check our menu for seasonal items available!
+            <p>
+            <hr>
+            <br /><br /><br /><br />
+
             <div class="drinks">
               <p>Honey Black Coffee</p>
               <img
@@ -81,7 +109,7 @@
                 alt="Oat Milk Cappuccino"
                 title="Oat Milk Cappuccino"
               />
-            </div>
+            </div><br>
             <div class="drinks">
               <p>Scarlett Citrus Tea</p>
               <img
@@ -110,23 +138,27 @@
         </section>
       </div>
 
-      <section class="testimonial"></section>
+      <section class="testimonial">
+        <h3>Honestly, some of the best coffee I've ever had.</h3>
+        <p>Axel P.</p>
+      </section>
 
-      <div class="container">
-        <section class="shop" id="shop">
+      <div class="shop-container">
+        <section class="shopsection" id="shop">
           <h2>Shop Merch</h2>
-          <p>Don't talk about Luna Coffee, be about Luna Coffee.</p>
-          <div class="clay mug">
+          <p>Make sure you are prepared to get your daily Luna Coffee Co. in all situations. Get the full setup or purchase separately!</p> 
+          </p>
+          <div class="item">
             <img src="images/mug.png" alt="clay mug" title="clay mug" />
             <p>Clay Mug</p>
           </div>
 
-          <div class="Hat">
+          <div class="item">
             <img src="images/hat.png" alt="hat" title="hat" />
             <p>Hat</p>
           </div>
 
-          <div class="glass bottle">
+          <div class="item">
             <img
               src="images/glassbottle.png"
               alt="glass bottle"
@@ -135,13 +167,13 @@
             <p>Glass Bottle</p>
           </div>
 
-          <div class="tshirt">
+          <div class="item">
             <img src="images/shirt.png" alt="tshirt" title="tshirt" />
             <p>T-shirt</p>
           </div>
         </section>
 
-        <div class="container">
+        <!-- <div class="container">
           <section class="contact-section" id="contact-us">
             <form
             class="contact-form"
@@ -204,21 +236,90 @@
             <div class="submit">
               <input type="submit" value="send message" />
             </div>
-          </form>
+          </form> -->
 
-          <p>Address: 123 Main Street, Austin, TX | Phone: 555-555-5555 | <a href="mailto:email@example.com">Email us</a></p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36395986623!2d-97.89348477786456!3d30.307686292630823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1619294355446!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </section>
+        <!--MAP-->
+        <div class="container">
+          <div style="text-align: center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <p>
+                Address: 123 Java Brew Ave, Austin, TX Phone: 555-555-5555 |
+                <a href="mailto:email@example.com">Email us</a>
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36395986623!2d-97.89348477786456!3d30.307686292630823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1619294355446!5m2!1sen!2sus"
+                width="400"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <!--Contact box-->
+            <div class="column">
+              <form
+                class="contact-form"
+                id="test_form"
+                name="test_form"
+                method="POST"
+                action="form.php"
+                onsubmit="return validateForm(this)"
+              >
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your name.."
+                />
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                />
+                <label for="phonenumber">Phone Number</label>
+                <input
+                  type="number"
+                  id="phonenumber"
+                  name="phone"
+                  placeholder="Your phone number.."
+                />
+                <label for="subject">Message</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write your message here.."
+                  style="height: 170px"
+                ></textarea>
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-        <div class="socialmedia">
-            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" title="facebook" /></a>
-            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter" title="twitter" /></a>
-            <a href="https://instagram.com/" target="_blank"><img src="images/instagram.png" alt="facebook" title="facebook" /></a>
-        </div>
+      <div class="socialmedia">
+        <a href="https://facebook.com/" target="_blank"
+          ><img src="images/facebook.png" alt="facebook" title="facebook"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="images/twitter.png" alt="twitter" title="twitter"
+        /></a>
+        <a href="https://instagram.com/" target="_blank"
+          ><img src="images/instagram.png" alt="facebook" title="facebook"
+        /></a>
+      </div>
+
+      <p>2020 Luna Coffee Co. All Rights Reserved.</p>
     </footer>
   </body>
 </html>

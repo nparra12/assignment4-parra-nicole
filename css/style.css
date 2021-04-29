@@ -5,10 +5,11 @@
 ==================================*/
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     border: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 h1,
@@ -22,6 +23,9 @@ h6 {
 
 p{
     font-family: 'Montserrat', sans-serif;
+    margin: 15px 0; /*top right bottom left*/
+    line-height: 25px;
+    font-size: large;
 }
 
 /*======================================
@@ -36,6 +40,7 @@ header {
     left: 0;
     right: 0;
     padding: 10px 0;
+    opacity: 0.8;
 }
 
 header nav ul li {
@@ -54,6 +59,10 @@ header nav a {
     margin: 0 20px;
 }
 
+.logo{
+    width: 150px;
+}
+
 
 /*======================================
 
@@ -62,10 +71,201 @@ header nav a {
 ======================================*/
 
 .hero-image-section{
-    background-image: url('../images/heroimage.png');
-    background-size:auto;
+    background: url(../images/heroimage.png) center/cover no-repeat;
     padding: 500px 0;
-    background-repeat: no-repeat;
-    background-position: center;
+    
 }
 
+/*======================================
+
+            Container Section
+
+======================================*/
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    z-index: 2;
+}
+
+/*======================================
+
+            About Section
+
+======================================*/
+.about-section{  
+    text-align: center;
+    padding: 90px;
+    margin: 20px 0 20px;
+}
+
+.menubutton{
+    background-color: #E87D59;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 25px;
+
+}
+
+.menubutton:hover{
+    background-color: #AE5F41;
+}
+
+.about-section h1::after{
+    content: url(../images/moon.png);
+    padding: 20px;
+    margin-top: 50px;
+}
+/*======================================
+
+            Menu Section
+
+======================================*/
+.menu-container{
+    background-color: #F4E5E1;
+}
+
+.menu-section{
+    left: 0;
+    right: 0;
+    padding: 100px 0;
+
+}
+.drink-menu{
+    text-align: center;
+}
+
+.drinks{
+   
+    display: inline-block;
+    font-weight: bold;
+}
+
+.drinks img{
+    height: 250px;
+
+}
+
+/*======================================
+
+            Testomonial break
+
+======================================*/
+.testimonial{
+    text-align: center;
+    font-size: 35px;
+    padding: 200px 0;
+}
+
+.testimonial p{
+    margin-left: 900px;
+}
+/*======================================
+
+            Shop Section
+
+======================================*/
+
+.shopsection{
+    text-align: center;
+    background-color: #45a049;
+    background-size: cover;
+    
+}
+
+
+.item{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.item img{
+    height: 200px;
+    padding: 10px;
+
+
+}
+
+
+
+/*======================================
+
+            Contact Section
+
+======================================*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #E87D59;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #AE5F41;
+  }
+  
+
+  .container {
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 25px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*======================================
+
+            Footer Section
+
+======================================*/
+footer{
+    background-color: #AE5F41;
+    text-align: center;
+    font-size: 2px;
+}
+
+.footer p{
+    display: inline-block;
+    padding: 5px;
+}
+
+.socialmedia{
+    padding: 5px;
+}
+
+
+
+
+/* animation */
+  .my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+  }
