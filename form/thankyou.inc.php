@@ -3,54 +3,60 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: aliceblue;
+    background-color: #FFFFF8;
 }
 
-.container{
-    max-width: 900px;
-    margin: 50px auto 180px;
-    text-align: center;
+.contact-container{
+    margin-bottom: 50px;
+    padding: 50px;
 }
 
 nav ul li{
     display: inline;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    background-color: orange;
-    text-align: center;
-    padding: 5px;
-
+li a:hover {
+    color: #76afb4;
+}
 }
 
-header{
-    text-align: center;
-    background-color: lightgray;
-    padding: 20px 0;
+header nav a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
 }
 
 .contact-form{
-    background: lightblue;
+    background: FFFFF8;
     padding: 20px;
     max-width: 500px;
     border-radius: 4px;
     color: white;
     font-family: sans-serif;
     margin: 20px auto;
-    text-align: left;
+    text-align: center;
 }
 
 footer{
-    background-color: lightgray;
-    color: white;
+    background-color: #AE5F41;
     text-align: center;
-    padding:20px 0;
+    font-size: 2px;
+    padding: 10px;
+}
+
+.footer p{
+    display: inline-block;
+}
+
+.socialmedia{
+    padding: 2px;
 }
 </style>
 
@@ -71,5 +77,17 @@ footer{
 </div>
 
 <footer>
-    <p>This page is designed by nicole</p>
-</footer>
+      <div class="socialmedia">
+        <a href="https://facebook.com/" target="_blank"
+          ><img src="images/facebook.png" alt="facebook" title="facebook"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img src="images/twitter.png" alt="twitter" title="twitter"
+        /></a>
+        <a href="https://instagram.com/" target="_blank"
+          ><img src="images/instagram.png" alt="facebook" title="facebook"
+        /></a>
+      </div>
+
+      <p>2020 Luna Coffee Co. All Rights Reserved.</p>
+    </footer>

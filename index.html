@@ -79,11 +79,14 @@
         <section class="menu-section" id="menu">
           <div class="drink-menu">
             <h1>Coffeebar Menu</h1>
+            <p>
+              Discover your new favorite delicious hand-crafted coffee and tea
+              beverages!<br />
+              Be sure to check our menu for seasonal items available!
+            </p>
+
+            <p></p>
             <hr />
-            <p>
-              Discover your new favorite delicious hand-crafted coffee and tea beverages!<br> Be sure to check our menu for seasonal items available!
-            <p>
-            <hr>
             <br /><br /><br /><br />
 
             <div class="drinks">
@@ -109,7 +112,8 @@
                 alt="Oat Milk Cappuccino"
                 title="Oat Milk Cappuccino"
               />
-            </div><br>
+            </div>
+            <br />
             <div class="drinks">
               <p>Scarlett Citrus Tea</p>
               <img
@@ -145,9 +149,14 @@
 
       <div class="shop-container">
         <section class="shopsection" id="shop">
+          <br />
           <h2>Shop Merch</h2>
-          <p>Make sure you are prepared to get your daily Luna Coffee Co. in all situations. Get the full setup or purchase separately!</p> 
+          <p>
+            Make sure you are prepared to get your daily Luna Coffee Co. in all
+            situations. <br />
+            Get the full setup or purchase separately!
           </p>
+
           <div class="item">
             <img src="images/mug.png" alt="clay mug" title="clay mug" />
             <p>Clay Mug</p>
@@ -172,96 +181,34 @@
             <p>T-shirt</p>
           </div>
         </section>
+      </div>
 
-        <!-- <div class="container">
-          <section class="contact-section" id="contact-us">
-            <form
-            class="contact-form"
-            id="test_form"
-            name="test_form"
-            method="POST"
-            action="form.php"
-            onsubmit="return validateForm(this)"
-          >
-            <div class="first-name input-section">
-              <label for="firstname" class="label_input_wrap">First Name:</label>
-              <input
-                type="text"
-                name="req_firstname"
-                id="firstname"
-                placeholder="ex. John"
-              />
+      <!--Contact // MAP-->
+      <div class="contact-container">
+        <section class="contact-section" id="contact">
+          <div class="contact-container">
+            <div style="text-align: center">
+              <h2>Contact Us</h2>
+              <p>Swing by for a cup of coffee, or leave us a message. <hr />
+                Address: 123 Java Brew Ave, Austin, TX | Phone: 555-555-5555 |
+                <a href="mailto:email@example.com">Email us</a></p>
+              
             </div>
-            <div class="last-name input-section">
-              <label for="lastname" class="label_input_wrap">Last Name:</label>
-              <input
-                type="text"
-                name="req_lastname"
-                id="lastname"
-                placeholder="ex. Smith"
-              />
-            </div>
-            <div class="email input-section">
-              <label for="email" class="label_input_wrap">Email:</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="jsmith@example.com"
-              />
-            </div>
-            <div class="telephone input-section">
-              <label for="telephone" class="label_input_wrap">Telephone:</label>
-              <input
-                type="tel"
-                name="req_telephone"
-                id="telephone"
-                placeholder="555-555-5555"
-              />
-            </div>
-            <div class="comments input-section">
-              <label for="comments" class="label_input_wrap"> Comments:</label>
-              <textarea
-                name="comments"
-                id="comments"
-                cols="35"
-                rows="5"
-                placeholder="Your Comment Goes Here"
-              ></textarea>
-            </div>
-            <div class="reset">
-              <input type="reset" value="refresh" />
-            </div>
-    
-            <div class="submit">
-              <input type="submit" value="send message" />
-            </div>
-          </form> -->
-
-        <!--MAP-->
-        <div class="container">
-          <div style="text-align: center">
-            <h2>Contact Us</h2>
-            <p>Swing by for a cup of coffee, or leave us a message:</p>
-          </div>
-          <div class="row">
-            <div class="column">
-              <p>
-                Address: 123 Java Brew Ave, Austin, TX Phone: 555-555-5555 |
-                <a href="mailto:email@example.com">Email us</a>
-              </p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36395986623!2d-97.89348477786456!3d30.307686292630823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1619294355446!5m2!1sen!2sus"
-                width="400"
-                height="350"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
+            <div class="row">
+              <div class="column">
+                
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220449.36395986623!2d-97.89348477786456!3d30.307686292630823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1619294355446!5m2!1sen!2sus"
+                  width="600"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
 
             <!--Contact box-->
-            <div class="column">
               <form
                 class="contact-form"
                 id="test_form"
@@ -286,7 +233,7 @@
                 />
                 <label for="phonenumber">Phone Number</label>
                 <input
-                  type="number"
+                  type="text"
                   id="phonenumber"
                   name="phone"
                   placeholder="Your phone number.."
@@ -300,26 +247,26 @@
                 ></textarea>
                 <input type="submit" value="Submit" />
               </form>
-            </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
 
-    <footer>
-      <div class="socialmedia">
-        <a href="https://facebook.com/" target="_blank"
-          ><img src="images/facebook.png" alt="facebook" title="facebook"
-        /></a>
-        <a href="https://twitter.com/" target="_blank"
-          ><img src="images/twitter.png" alt="twitter" title="twitter"
-        /></a>
-        <a href="https://instagram.com/" target="_blank"
-          ><img src="images/instagram.png" alt="facebook" title="facebook"
-        /></a>
-      </div>
-
-      <p>2020 Luna Coffee Co. All Rights Reserved.</p>
-    </footer>
+     <!--Footer-->
+     <footer>
+        <div class="socialmedia">
+          <a href="https://facebook.com/" target="_blank"
+            ><img src="images/facebook.png" alt="facebook" title="facebook"
+          /></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><img src="images/twitter.png" alt="twitter" title="twitter"
+          /></a>
+          <a href="https://instagram.com/" target="_blank"
+            ><img src="images/instagram.png" alt="instagram" title="instagram"
+          /></a>
+        </div>
+        <p>2020 Luna Coffee Co. All Rights Reserved.</p>
+     </footer>
+ 
   </body>
 </html>
