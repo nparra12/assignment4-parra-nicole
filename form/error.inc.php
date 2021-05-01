@@ -45,19 +45,22 @@ header nav a {
 }
 
 footer{
-    background-color: #AE5F41;
+    width: 100%;
     text-align: center;
-    font-size: 2px;
+    background-color: #AE5F41;
     padding: 10px;
+    
 }
 
 .footer p{
-    display: inline-block;
+    display: block;
 }
 
 .socialmedia{
-    padding: 2px;
+    display: block;
+    padding: 5px;
 }
+
 </style>
 
 <header>
